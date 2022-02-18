@@ -1,0 +1,79 @@
+$backgroundColor: #a76565;
+$primaryTextColor: #f1f1f1;
+$secondaryColor: #dfa0a0;
+
+$backgroundImagePath: "./images/main_space_background.jpg";
+
+* {
+  margin: 0;
+  color: $primaryTextColor;
+  font-family: Roboto;
+}
+
+body {
+  background: $backgroundColor;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: min(5vw, 24px);
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+@media screen and (max-width: 960px) {
+  .navbar {
+    flex-direction: column;
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+      padding: 20px 0 20px 0;
+      border-top: 2px solid $secondaryColor;
+      border-bottom: 2px solid $secondaryColor;
+      row-gap: 20px;
+    }
+  }
+  .content {
+    margin-top: 120px;
+  }
+}
+
+.logo {
+  width: clamp(120px, 10vw, 160px);
+  cursor: pointer;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+
+  h1 {
+    font-size: min(7vw, 50px);
+    margin-top: -100px;
+    font-weight: 100;
+  }
+  p {
+    font-size: min(10vw, 100px);
+    margin: 20px auto;
+    padding: 0 20px 0 20px;
+    font-weight: 400;
+  }
+}
