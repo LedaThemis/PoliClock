@@ -7,7 +7,6 @@
 <p>This project was created by 
     <a href="https://github.com/HypnotizedLeda" 
     target="_blank"
-    rel="noopener noreferrer">Leda
-    </a>, and is published under the 
+    rel="noopener noreferrer">Leda</a>, and is published under the 
     <a href="https://github.com/HypnotizedLeda/PoliClock/blob/master/LICENSE">MIT License</a>
 </p>
