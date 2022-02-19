@@ -41,7 +41,7 @@ class Body extends React.Component {
 class OurMethod extends React.Component {
   render() {
     return (
-      <div id="our-method">
+      <div id="our-method" className="info-card">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -56,7 +56,7 @@ class OurMethod extends React.Component {
 class WhyPoliClock extends React.Component {
   render() {
     return (
-      <div id="why-policlock">
+      <div id="why-policlock" className="info-card">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -71,7 +71,7 @@ class WhyPoliClock extends React.Component {
 class About extends React.Component {
   render() {
     return (
-      <div id="about">
+      <div id="about" className="info-card">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea

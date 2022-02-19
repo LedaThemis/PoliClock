@@ -6,6 +6,9 @@
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: "our-method why-policlock about";
+
+  align-items: center;
+  justify-items: center;
 }
 
 #our-method {
