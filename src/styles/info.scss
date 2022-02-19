@@ -1,16 +1,22 @@
 @import "variables.scss";
 
 .info-container {
+  height: 100%;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: minmax();
-  gap: 50px 50px;
-  grid-template-areas: "our-method why-policlock about";
+  grid-template-rows: 1fr;
+  gap: 20px 50px;
+  grid-template-areas:
+    "our-method why-policlock about"
+    ". . .";
 
-  align-items: center;
+  align-items: start;
   justify-items: center;
 
-  margin: 0 50px 0 50px;
+  padding: 0 50px 0 50px;
+
+  background-image: $backgroundImage;
+  background-position: center;
 }
 @media screen and (max-width: $smallScreenSize) {
   .info-container {
@@ -37,28 +43,33 @@
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(20px, 50px) 1fr;
+  grid-template-rows: 0.2fr 0.8fr;
   gap: 0px 0px;
   grid-template-areas:
     "title"
     "desc";
-
   justify-items: center;
+
+  text-align: center;
 
   // card look
   padding: 20px;
-  height: 80%;
   background-color: $secondaryColor;
   border-radius: 20px;
+  max-width: 500px;
+  height: 500px;
 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2);
   transition: 0.3s;
 
-  h1 {
+  h3 {
     grid-area: title;
+    font-size: 48px;
+    font-weight: 400;
   }
   p {
     grid-area: desc;
+    font-size: 24px;
   }
 }
 .info-card:hover {

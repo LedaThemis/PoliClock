@@ -11,7 +11,12 @@ class Body extends React.Component {
       <div id="home" className="home-container container-template">
         <nav className="navbar">
           <a href="#home">
-            <img src={LOGO_IMAGE} className="logo"></img>
+            <img
+              src={LOGO_IMAGE}
+              alt="policlock logo, mars with stars around it"
+              className="logo"
+            ></img>
+            <h1>PoliClock</h1>
           </a>
           <ul>
             <li>
@@ -44,13 +49,10 @@ class OurMethod extends React.Component {
       <div id="our-method" className="info-card">
         <h3>Our Method</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          We calculate the date and time in Mars by calculating the time since
+          UNIX epoch in milliseconds, and converting that to Mars time This
+          isn't the conventional way to get date on Mars, but it allows you to
+          see the date on Mars in earth terms.
         </p>
       </div>
     );
@@ -62,13 +64,10 @@ class WhyPoliClock extends React.Component {
       <div id="why-policlock" className="info-card">
         <h3>Why PoliClock?</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Well, the secret formula to a good name is greek! (yes, that's true)
+          and with that, you take Mars (God of War) in greek which is "Polemos"
+          Adding to that "Clock", and you get PoleClock. Now, The problem with
+          PoleClock is the pronounciation, so we changed that to PoliClock 🎉
         </p>
       </div>
     );
@@ -80,13 +79,9 @@ class About extends React.Component {
       <div id="about" className="info-card">
         <h3>About</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          This Project was inspired by a need to congratulate people in their
+          birthdays late and not get scolded, and that's possible by telling
+          them that it was in "Mars Time"
         </p>
       </div>
     );
@@ -95,7 +90,7 @@ class About extends React.Component {
 class Info extends React.Component {
   render() {
     return (
-      <div className="info-container container-template">
+      <div className="container-template info-container">
         <OurMethod />
         <WhyPoliClock />
         <About />
@@ -104,14 +99,18 @@ class Info extends React.Component {
   }
 }
 
-class ToggleButton extends React.Component {
+class Footer extends React.Component {
   render() {
     return (
-      <div id="toggleButton">
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider round"></span>
-        </label>
+      <div id="footer">
+        &copy; {new Date().getFullYear()},{" "}
+        <a
+          href="https://github.com/hypnotizedleda"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Leda
+        </a>
       </div>
     );
   }
@@ -123,7 +122,7 @@ class App extends React.Component {
       <div>
         <Body />
         <Info />
-        <ToggleButton />
+        <Footer />
       </div>
     );
   }

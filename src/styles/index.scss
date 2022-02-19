@@ -1,13 +1,11 @@
 @import "variables.scss";
-@import "togglebutton.scss";
 @import "info.scss";
-
-$backgroundImagePath: "../images/darkness_yellow.png";
+@import "footer.scss";
 
 * {
   margin: 0;
   color: $primaryTextColor;
-  font-family: Roboto;
+  font-family: Inconsolata;
 }
 
 body {
@@ -16,9 +14,9 @@ body {
 
 .container-template {
   display: grid;
-  height: 100vh;
 }
 .home-container {
+  height: 100vh;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr;
   grid-template-rows: 0.3fr 0.1fr 1fr;
@@ -28,10 +26,8 @@ body {
     "."
     "clocktime";
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url($backgroundImagePath);
+  background-image: $backgroundImage;
   background-position: center;
-  border-bottom: 2px solid red;
 }
 
 .navbar {
@@ -42,6 +38,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+
+    h1 {
+      font-size: 48px;
+      font-family: "Inconsolata";
+      font-weight: 400;
+    }
+  }
 
   ul li {
     list-style: none;
@@ -84,7 +94,7 @@ body {
 
   h1 {
     font-size: min(7vw, 50px);
-    font-weight: 100;
+    font-weight: 200;
   }
   p {
     font-size: min(10vw, 100px);
