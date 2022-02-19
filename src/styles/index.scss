@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "home.scss";
 @import "navbar.scss";
 @import "info.scss";
 @import "footer.scss";
@@ -15,36 +16,4 @@ body {
 
 .container-template {
   display: grid;
-}
-.home-container {
-  height: 100vh;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 0.1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "navbar"
-    "."
-    "clocktime";
-
-  background-image: $backgroundImage;
-  background-position: center;
-}
-
-.content {
-  grid-area: clocktime;
-  align-self: start;
-  justify-self: center;
-  text-align: center;
-
-  h1 {
-    font-size: min(7vw, 50px);
-    font-weight: 200;
-  }
-  p {
-    font-size: min(10vw, 100px);
-    margin: 20px auto;
-    padding: 0 20px 0 20px;
-    font-weight: 400;
-  }
 }
