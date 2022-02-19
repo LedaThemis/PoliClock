@@ -1,8 +1,8 @@
 <img src="https://i.imgur.com/vBGlN0e.png" alt="PoliClock site screenshot"></img>
 
-<h1 style="text-align: center"><a href="https://hypnotizedleda.github.io/PoliClock/" target="_blank" rel="noopener noreferrer">PoliClock</a></h1>
+<h1 align="center"><a href="https://hypnotizedleda.github.io/PoliClock/" target="_blank" rel="noopener noreferrer">PoliClock</a></h1>
 <hr />
-<p style="text-align: center">A site to help you know your birthday, if you plan to move to Mars.</p>
+<p align="center">A site to help you know your birthday, if you plan to move to Mars.</p>
 <h2>Copyright:</h2>
 <p>This project was created by 
     <a href="https://github.com/HypnotizedLeda" 
