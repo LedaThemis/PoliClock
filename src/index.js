@@ -73,9 +73,18 @@ class OurMethod extends React.Component {
         <h3>Our Method</h3>
         <p>
           We calculate the date and time in Mars by calculating the time since
-          UNIX epoch in milliseconds, and converting that to Mars time This
-          isn't the conventional way to get date on Mars, but it allows you to
-          see the date on Mars in earth terms.
+          UNIX epoch in milliseconds, and converting that to Mars time. <br />
+          This isn't the conventional way to get date on Mars, but it allows you
+          to see the date on Mars in earth terms. <br />
+          Here's an{" "}
+          <a
+            href="https://www.giss.nasa.gov/tools/mars24/help/algorithm.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            article by NASA
+          </a>{" "}
+          with a more conventional/practical approach.
         </p>
       </div>
     );
