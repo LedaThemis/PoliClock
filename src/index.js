@@ -9,8 +9,10 @@ class Body extends React.Component {
   render() {
     return (
       <div className="banner">
-        <div className="navbar">
-          <img src={LOGO_IMAGE} className="logo"></img>
+        <nav className="navbar">
+          <a href="#">
+            <img src={LOGO_IMAGE} className="logo"></img>
+          </a>
           <ul>
             <li>
               <a href="#">Home</a>
@@ -25,7 +27,7 @@ class Body extends React.Component {
               <a href="#">About</a>
             </li>
           </ul>
-        </div>
+        </nav>
 
         <div class="content">
           <h1>TIME IN MARS:</h1>
@@ -35,7 +37,6 @@ class Body extends React.Component {
     );
   }
 }
-
 class App extends React.Component {
   render() {
     return (
