@@ -12,6 +12,16 @@
 
   margin: 0 50px 0 50px;
 }
+@media screen and (max-width: 960px) {
+  .info-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "our-method"
+      "why-policlock"
+      "about";
+  }
+}
 
 #our-method {
   grid-area: our-method;
@@ -25,10 +35,32 @@
 
 .info-card {
   display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(20px, 50px) 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "title"
+    "desc";
+
+  justify-items: center;
+
+  // card look
+  padding: 20px;
   height: 80%;
-  background-color: black;
+  background-color: #333;
   border-radius: 20px;
-  p {
-    align-self: center;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+
+  h1 {
+    grid-area: title;
   }
+  p {
+    grid-area: desc;
+  }
+}
+.info-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
