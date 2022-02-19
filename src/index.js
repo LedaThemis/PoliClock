@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import "./styles/index.scss";
 
 import LOGO_IMAGE from "./images/mars.png";
-const EARTH_TO_SOL = 0.97324697268375105604;
+const EARTH_TO_SOL = 0.97324429770083200222; // (24*3600) / (24*3600 + 39*60 + 35.244)
 
 // "a Martian day — is 24 hours, 39 minutes and 35.244 seconds,[3] equivalent to 1.02749125 Earth days."
 // https://en.wikipedia.org/wiki/Sol_(day_on_Mars)
