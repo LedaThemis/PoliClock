@@ -4,11 +4,13 @@
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 50px 50px;
   grid-template-areas: "our-method why-policlock about";
 
   align-items: center;
   justify-items: center;
+
+  margin: 0 50px 0 50px;
 }
 
 #our-method {
@@ -19,4 +21,14 @@
 }
 #about {
   grid-area: about;
+}
+
+.info-card {
+  display: grid;
+  height: 80%;
+  background-color: black;
+  border-radius: 20px;
+  p {
+    align-self: center;
+  }
 }
