@@ -50,3 +50,8 @@
     }
   }
 }
+
+.logo {
+  width: clamp(120px, 10vw, 160px);
+  cursor: pointer;
+}

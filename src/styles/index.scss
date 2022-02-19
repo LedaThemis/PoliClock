@@ -31,11 +31,6 @@ body {
   background-position: center;
 }
 
-.logo {
-  width: clamp(120px, 10vw, 160px);
-  cursor: pointer;
-}
-
 .content {
   grid-area: clocktime;
   align-self: start;
