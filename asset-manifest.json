@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/PoliClock/static/css/main.b6c09db8.css",
-    "main.js": "/PoliClock/static/js/main.f96fce5c.js",
+    "main.js": "/PoliClock/static/js/main.0f2deb79.js",
     "static/media/mars.png": "/PoliClock/static/media/mars.8ae137cde6dc2b74290a.png",
     "index.html": "/PoliClock/index.html",
     "main.b6c09db8.css.map": "/PoliClock/static/css/main.b6c09db8.css.map",
-    "main.f96fce5c.js.map": "/PoliClock/static/js/main.f96fce5c.js.map"
+    "main.0f2deb79.js.map": "/PoliClock/static/js/main.0f2deb79.js.map"
   },
   "entrypoints": [
     "static/css/main.b6c09db8.css",
-    "static/js/main.f96fce5c.js"
+    "static/js/main.0f2deb79.js"
   ]
 }
