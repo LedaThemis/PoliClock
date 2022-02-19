@@ -1,5 +1,6 @@
 @import "variables.scss";
 @import "togglebutton.scss";
+@import "info.scss";
 
 $backgroundImagePath: "../images/main_space_background.jpg";
 
@@ -92,9 +93,4 @@ body {
     padding: 0 20px 0 20px;
     font-weight: 400;
   }
-}
-
-#our-method {
-  display: grid;
-  background-color: black;
 }

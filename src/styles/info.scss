@@ -7,3 +7,13 @@
   gap: 0px 0px;
   grid-template-areas: "our-method why-policlock about";
 }
+
+#our-method {
+  grid-area: our-method;
+}
+#why-policlock {
+  grid-area: why-policlock;
+}
+#about {
+  grid-area: about;
+}
