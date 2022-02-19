@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "navbar.scss";
 @import "info.scss";
 @import "footer.scss";
 
@@ -28,57 +29,6 @@ body {
 
   background-image: $backgroundImage;
   background-position: center;
-}
-
-.navbar {
-  grid-area: navbar;
-  width: 85%;
-  margin: auto;
-  padding: 35px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    gap: 20px;
-
-    h1 {
-      font-size: 48px;
-      font-family: "Inconsolata";
-      font-weight: 400;
-    }
-  }
-
-  ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    font-size: min(5vw, 24px);
-    a {
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-  }
-}
-@media screen and (max-width: $smallScreenSize) {
-  .navbar {
-    flex-direction: column;
-    ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-top: 30px;
-      padding: 20px 0 20px 0;
-      border-top: 2px solid $secondaryColor;
-      border-bottom: 2px solid $secondaryColor;
-      row-gap: 20px;
-    }
-  }
 }
 
 .logo {
