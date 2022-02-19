@@ -1,0 +1,9 @@
+@import "variables.scss";
+
+.info-container {
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "our-method why-policlock about";
+}
