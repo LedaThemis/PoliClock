@@ -4,23 +4,22 @@ import ReactDOM from "react-dom";
 import "./styles/index.scss";
 
 import LOGO_IMAGE from "./images/mars.png";
-const EARTH_TO_SOL = 1 / 1.02749125;
-
-let now = new Date().getTime();
-console.log(now);
+const EARTH_TO_SOL = 0.97324697268375105604;
 
 // "a Martian day — is 24 hours, 39 minutes and 35.244 seconds,[3] equivalent to 1.02749125 Earth days."
 // https://en.wikipedia.org/wiki/Sol_(day_on_Mars)
-let martianMillsSinceEpoch = now * EARTH_TO_SOL;
+function getMarsMills() {
+  return new Date().getTime() * EARTH_TO_SOL;
+}
 
 class Body extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { seconds: 0 };
+    this.state = { milliseconds: getMarsMills() };
   }
   tick() {
     this.setState((state) => ({
-      seconds: state.seconds + 1,
+      milliseconds: getMarsMills(),
     }));
   }
   componentDidMount() {
@@ -60,11 +59,7 @@ class Body extends React.Component {
 
         <div className="content">
           <h1>TIME IN MARS:</h1>
-          <p>
-            {new Date(
-              martianMillsSinceEpoch + this.state.seconds * 1000 * EARTH_TO_SOL
-            ).toLocaleString()}
-          </p>
+          <p>{new Date(this.state.milliseconds).toLocaleString()}</p>
         </div>
       </div>
     );
