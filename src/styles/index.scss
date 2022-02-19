@@ -55,7 +55,7 @@ body {
     }
   }
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: $smallScreenSize) {
   .navbar {
     flex-direction: column;
     ul {
