@@ -3,7 +3,7 @@
 .info-container {
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: minmax();
   gap: 50px 50px;
   grid-template-areas: "our-method why-policlock about";
 

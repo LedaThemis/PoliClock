@@ -2,7 +2,7 @@
 @import "togglebutton.scss";
 @import "info.scss";
 
-$backgroundImagePath: "../images/main_space_background.jpg";
+$backgroundImagePath: "../images/darkness_yellow.png";
 
 * {
   margin: 0;
@@ -28,10 +28,9 @@ body {
     "."
     "clocktime";
 
-  // background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-  //   url($backgroundImagePath);
-  // background-size: cover;
-  // background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url($backgroundImagePath);
+  background-position: center;
   border-bottom: 2px solid red;
 }
 
