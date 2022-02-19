@@ -111,6 +111,13 @@ class Footer extends React.Component {
         >
           Leda
         </a>
+        <br />
+        <p id="attribution-text">
+          Attribution: Mars icon was created by{" "}
+          <a href="https://www.flaticon.com/free-icons/mars" title="mars icons">
+            Freepik - Flaticon
+          </a>
+        </p>
       </div>
     );
   }
