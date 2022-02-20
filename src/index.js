@@ -18,9 +18,9 @@ class Body extends React.Component {
     this.state = { milliseconds: getMarsMills() };
   }
   tick() {
-    this.setState((state) => ({
+    this.setState({
       milliseconds: getMarsMills(),
-    }));
+    });
   }
   componentDidMount() {
     this.interval = setInterval(() => this.tick(), 1000);
