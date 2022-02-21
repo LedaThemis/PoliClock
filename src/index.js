@@ -134,7 +134,7 @@ class Info extends React.Component {
 class Footer extends React.Component {
   render() {
     return (
-      <div id="footer">
+      <footer id="footer">
         &copy; {new Date().getFullYear()},{" "}
         <a
           href="https://github.com/hypnotizedleda"
@@ -155,7 +155,7 @@ class Footer extends React.Component {
             Freepik - Flaticon
           </a>
         </p>
-      </div>
+      </footer>
     );
   }
 }
