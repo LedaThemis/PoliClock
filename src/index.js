@@ -122,11 +122,14 @@ class About extends React.Component {
 class Info extends React.Component {
   render() {
     return (
-      <div className="container-template info-container">
+      <section
+        role="doc-abstract"
+        className="container-template info-container"
+      >
         <OurMethod />
         <WhyPoliClock />
         <About />
-      </div>
+      </section>
     );
   }
 }
