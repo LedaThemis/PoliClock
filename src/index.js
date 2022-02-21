@@ -32,7 +32,7 @@ class Body extends React.Component {
   render() {
     return (
       <div id="home" className="home-container container-template">
-        <nav className="navbar">
+        <nav role="navigation" className="navbar">
           <a href="#home">
             <img
               src={LOGO_IMAGE}
