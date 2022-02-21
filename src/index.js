@@ -57,10 +57,10 @@ class Body extends React.Component {
           </ul>
         </nav>
 
-        <div className="content">
+        <main role="main" className="content">
           <h1>TIME IN MARS:</h1>
           <p>{new Date(this.state.milliseconds).toLocaleString()}</p>
-        </div>
+        </main>
       </div>
     );
   }
