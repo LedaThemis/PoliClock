@@ -70,7 +70,7 @@ class OurMethod extends React.Component {
   render() {
     return (
       <div id="our-method" className="info-card">
-        <h3>Our Method</h3>
+        <h2>Our Method</h2>
         <p>
           We calculate the date and time in Mars by calculating the time since
           UNIX epoch in milliseconds, and converting that to Mars time. <br />
@@ -94,7 +94,7 @@ class WhyPoliClock extends React.Component {
   render() {
     return (
       <div id="why-policlock" className="info-card">
-        <h3>Why PoliClock?</h3>
+        <h2>Why PoliClock?</h2>
         <p>
           Well, the secret formula to a good name is greek! (yes, that's true)
           and with that, you take Mars (God of War) in greek which is "Polemos"
@@ -109,7 +109,7 @@ class About extends React.Component {
   render() {
     return (
       <div id="about" className="info-card">
-        <h3>About</h3>
+        <h2>About</h2>
         <p>
           This Project was inspired by a need to congratulate people in their
           birthdays late and not get scolded, and that's possible by telling
@@ -170,6 +170,11 @@ class App extends React.Component {
       </div>
     );
   }
+}
+
+if (process.env.NODE_ENV !== "production") {
+  const axe = require("@axe-core/react");
+  axe(React, ReactDOM, 1000);
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));

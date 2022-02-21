@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@axe-core/react": "^4.4.0",
     "gh-pages": "^3.2.3"
   }
 }
