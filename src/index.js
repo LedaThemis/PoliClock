@@ -1,23 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Body from "./components/Body.js";
-import Info from "./components/Info.js";
-import Footer from "./components/Footer.js";
-
-import "./styles/index.scss";
-
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <Body />
-        <Info />
-        <Footer />
-      </div>
-    );
-  }
-}
+import App from "./App.js";
 
 if (process.env.NODE_ENV !== "production") {
   const axe = require("@axe-core/react");
