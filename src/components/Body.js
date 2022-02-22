@@ -1,4 +1,6 @@
 import React from "react";
+import "../styles/home.scss";
+import "../styles/navbar.scss";
 
 import LOGO_IMAGE from "../images/mars.png";
 
