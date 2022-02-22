@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import Info from "./components/Info.js";
+import Footer from "./components/Footer.js";
 
 import "./styles/index.scss";
 
@@ -64,35 +65,6 @@ class Body extends React.Component {
           <p>{new Date(this.state.milliseconds).toLocaleString()}</p>
         </main>
       </div>
-    );
-  }
-}
-
-class Footer extends React.Component {
-  render() {
-    return (
-      <footer id="footer">
-        &copy; {new Date().getFullYear()},{" "}
-        <a
-          href="https://github.com/hypnotizedleda"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Leda
-        </a>
-        <br />
-        <p id="attribution-text">
-          Attribution: Mars icon was created by{" "}
-          <a
-            href="https://www.flaticon.com/free-icons/mars"
-            title="mars icons"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Freepik - Flaticon
-          </a>
-        </p>
-      </footer>
     );
   }
 }
