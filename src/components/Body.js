@@ -9,6 +9,37 @@ function getMarsMills() {
   return new Date().getTime() * EARTH_TO_SOL;
 }
 
+class Navbar extends React.Component {
+  render() {
+    return (
+      <nav role="navigation" className="navbar">
+        <a href="#home">
+          <img
+            src={LOGO_IMAGE}
+            alt="policlock logo, mars with stars around it"
+            className="logo"
+          ></img>
+          <h1>PoliClock</h1>
+        </a>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#our-method">Our Method</a>
+          </li>
+          <li>
+            <a href="#why-policlock">Why Policlock?</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+        </ul>
+      </nav>
+    );
+  }
+}
+
 class Body extends React.Component {
   constructor(props) {
     super(props);
@@ -29,31 +60,7 @@ class Body extends React.Component {
   render() {
     return (
       <div id="home" className="home-container container-template">
-        <nav role="navigation" className="navbar">
-          <a href="#home">
-            <img
-              src={LOGO_IMAGE}
-              alt="policlock logo, mars with stars around it"
-              className="logo"
-            ></img>
-            <h1>PoliClock</h1>
-          </a>
-          <ul>
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#our-method">Our Method</a>
-            </li>
-            <li>
-              <a href="#why-policlock">Why Policlock?</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-          </ul>
-        </nav>
-
+        <Navbar />
         <main role="main" className="content">
           <h1>TIME IN MARS:</h1>
           <p>{new Date(this.state.milliseconds).toLocaleString()}</p>
