@@ -40,7 +40,7 @@ class Navbar extends React.Component {
   }
 }
 
-class Body extends React.Component {
+class TimeInMars extends React.Component {
   constructor(props) {
     super(props);
     this.state = { milliseconds: getMarsMills() };
@@ -59,12 +59,20 @@ class Body extends React.Component {
   }
   render() {
     return (
+      <main role="main" className="content">
+        <h1>TIME IN MARS:</h1>
+        <p>{new Date(this.state.milliseconds).toLocaleString()}</p>
+      </main>
+    );
+  }
+}
+
+class Body extends React.Component {
+  render() {
+    return (
       <div id="home" className="home-container container-template">
         <Navbar />
-        <main role="main" className="content">
-          <h1>TIME IN MARS:</h1>
-          <p>{new Date(this.state.milliseconds).toLocaleString()}</p>
-        </main>
+        <TimeInMars />
       </div>
     );
   }
