@@ -8,5 +8,5 @@
     <a href="https://github.com/LedaThemis" 
     target="_blank"
     rel="noopener noreferrer">Leda</a>, and is published under the 
-    <a href="https://github.com/LedaThemis/PoliClock/blob/master/LICENSE">MIT License</a>
+    <a href="./LICENSE">MIT License</a>
 </p>
